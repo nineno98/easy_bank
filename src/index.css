@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --gradient: linear-gradient(90deg, #31d165, #2bb9cf);
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+nav.wrapper{
+    width: 100% ;
+    
+
+}
+nav>.wrapper>button{
+    background: var(--gradient);
+}
+
