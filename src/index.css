@@ -5,18 +5,82 @@
 }
 :root{
     --gradient: linear-gradient(90deg, #31d165, #2bb9cf);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
 }
 body{
     width: 100%;
     min-height: 100vh;
     
 }
-nav.wrapper{
-    width: 100% ;
-    
+.wrapper{
+    max-width: 100%;
+    width: 95%;
+    margin: auto;
+}
+.wrapper button{
+    background: var(--gradient);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
 
 }
-nav>.wrapper>button{
-    background: var(--gradient);
+/** Navbar **/
+nav{
+    width: 100%;
+    padding: 16px 0px;
+    position: absolute;
+    background: white;
+    z-index: 99;
+}
+nav a{
+    color: gray;
+    text-decoration: none;
+}
+nav .logo{
+    font-weight: 900;
+    font-size: 1.2rem;
+
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+nav>.wrapper{
+    width: 95% ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/** Hero **/
+
+#hero{
+    background: #fafafa;
+}
+
+#hero .wrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero .wrapper>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+#hero h1{
+    font-size: 4rem;
 }
 
