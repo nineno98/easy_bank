@@ -88,18 +88,19 @@ nav>.wrapper{
     background: #f4f5f7;
 }
 
-#whyus>.wrapper{
+#whyus>.wrapper,
+#latest>.wrapper {
     padding: 100px 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 #whyus h2{
     font-size: 3rem;
     font-weight: normal;
 }
 
+#latest .cards,
 #whyus .cards{
     display: grid;
     gap: 20px;
@@ -120,7 +121,7 @@ nav>.wrapper{
 }
 
 @media only screen and (max-width: 600px){
-    #whyus .cards{
+     .cards{
         grid-template-columns: 1fr;
     }
 
@@ -129,7 +130,7 @@ nav>.wrapper{
         text-align: center;
     }
 
-    #whyus .cards>div{
+    .cards>div{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -138,3 +139,24 @@ nav>.wrapper{
     }
 }
 
+#latest img{
+    height: 200px;
+    display: block;
+    background-color: gray;
+    width: 100%;
+    object-fit: cover;
+
+}
+#latest .cards>div{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#latest .cards>div>div{
+    padding: 20px;
+}
+
+
+#latest h6{
+    color: gray;
+}
