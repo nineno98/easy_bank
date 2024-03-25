@@ -124,6 +124,11 @@ nav>.wrapper{
         grid-template-columns: 1fr;
     }
 
+    #hero .wrapper>div{
+        width: 100%;
+        text-align: center;
+    }
+
     #whyus .cards>div{
         display: flex;
         justify-content: center;
