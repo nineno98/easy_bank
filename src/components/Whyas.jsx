@@ -11,7 +11,7 @@ const whyas = () => {
   }, [])
 
   return (
-    <section id= 'whyas'>
+    <section id= 'whyus'>
       <div className="wrapper">
         <h2>Why choose Easybank?</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
